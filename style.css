@@ -204,8 +204,8 @@ header .totalQuantity{
     text-decoration: none;
 }
 .checkoutLayout{
-   
-    grid-template-columns: repeat(2, 1fr);
+    
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 0%;
     font-size: 17px;
@@ -217,7 +217,7 @@ header .totalQuantity{
     color: #fff;
 }
 .checkoutLayout .right .form{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     border-bottom: 1px solid #7a7fe2;
@@ -241,7 +241,7 @@ header .totalQuantity{
     color: #000000;
 }
 .checkoutLayout .right .return .row{
-    display: flex;
+    display:block;
     justify-content: space-between;
     align-items: center;
     margin-top: 3px;
@@ -255,13 +255,13 @@ header .totalQuantity{
     font-weight: bold;
     background-color: #30da21;
     font-size: 15px;
-    display: flex;
+    display:grid;
     padding-left: 10px;
     align-items: center;
   
 }
 .checkoutLayout .right .grouppay img{
-    display: flex;
+    display:block;
     justify-content: space-between;
     align-items: center;
     margin-top: 3px;
@@ -304,16 +304,4 @@ header .totalQuantity{
 .returnCart .list .item .returnPrice{
     font-size: large;
     font-weight: bold;
-}
-.ring{
-    width: 200px;
-    height: 200px;
-    border: 0px solid #000;
-    border-radius: 50%;
-    position: absolute;
-}
-.ring:nth-child(1){
-    border-bottom-width: 8px;
-    border-color: rgb(255,255,255);
-    animation: rotate1 2s linear infinite;
 }
