@@ -13,7 +13,7 @@ a{
     transition: transform 1s;
 }
 header img{
-    width: 60px;
+    width: 55px;
 }
 header{
     display: flex;
@@ -26,6 +26,7 @@ header .iconCart{
     top:7%;
     z-index: 1;
     cursor:pointer;
+    
 }
 header .iconCart p{
     position: inherit;
@@ -61,11 +62,14 @@ header .totalQuantity{
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    
 }
 .listProduct .item img{
     width: 100%;
     height: 300px;
-    object-fit:contain; 
+  object-fit: contain;
+   
+   
     
 }
 .listProduct .item{
@@ -75,6 +79,13 @@ header .totalQuantity{
     text-align: center;
     font-weight: 700;
     font-size: x-large;
+}
+.listProduct .item h3{
+    text-align: center;
+    font-weight: 300;
+    font-size:large;
+   
+    
 }
 .listProduct .item .price{
     font-size: x-large;
@@ -87,7 +98,7 @@ header .totalQuantity{
     left: 50%;
     background-color: #e6572c;
     color: #fff;
-    width: 60%;
+    width: 55%;
     border:none;
     padding: 20px 10px;
     box-shadow: 0 10px 50px #000;
@@ -121,10 +132,12 @@ header .totalQuantity{
     position:relative;
 }
 .cart h2{
-    color: #E8BC0E;
+    color: #0a0a09;
     padding: 20px;
     height: 30px;
     margin: 0;
+    background-color: #49D8B9;
+    
 }
 
 
@@ -191,10 +204,10 @@ header .totalQuantity{
     text-decoration: none;
 }
 .checkoutLayout{
-    display: grid;
+   
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 20px;
+    padding: 0%;
     font-size: 17px;
 }
 .checkoutLayout .right{
@@ -224,8 +237,8 @@ header .totalQuantity{
     border-radius: 20px;
     margin-top: 3px;
     border:none;
-    background-color: #6a6fc9;
-    color: #fff;
+    background-color: #b7bbe4;
+    color: #000000;
 }
 .checkoutLayout .right .return .row{
     display: flex;
@@ -243,7 +256,7 @@ header .totalQuantity{
     background-color: #30da21;
     font-size: 15px;
     display: flex;
-    padding-left: 15px;
+    padding-left: 10px;
     align-items: center;
   
 }
@@ -254,6 +267,7 @@ header .totalQuantity{
     margin-top: 3px;
     margin-right: 3px;
     background-color: #eee;
+    
    
 }
 .buttonCheckout{
@@ -265,6 +279,7 @@ header .totalQuantity{
     margin-top: 20px;
     font-weight: bold;
     color: #fff;
+    cursor: pointer;
 
 
 }
