@@ -11,37 +11,30 @@ a{
     margin: auto;
     max-width: 90%;
     transition: transform 1s;
+    
 }
 header img{
     width: 55px;
+    
 }
 header{
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
+   
+  
+
 }
 header .iconCart{
-    position:fixed;
+    position: fixed;
     right: 5%;
-    top:7%;
+    top:1;
     z-index: 1;
     cursor:pointer;
     
-}
-header .iconCart p{
-    position: inherit;
-    right: 6%;
-    top:1%;
-    font-weight: bolder;
-    font-size: x-large;
-    color: #ffffff;
-    background-color: #000000;
-    border-radius: 50%;
     
-   
-    z-index: 1;
-    cursor:pointer;
 }
+
 header .totalQuantity{
     position: absolute;
     top: 0;
@@ -217,11 +210,12 @@ header .totalQuantity{
     color: #fff;
 }
 .checkoutLayout .right .form{
-    display:grid;
+    display:block;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     border-bottom: 1px solid #7a7fe2;
     padding-bottom: 20px;
+   
 }
 .checkoutLayout .form h1,
 .checkoutLayout .form .group:nth-child(-n+3){
@@ -250,25 +244,33 @@ header .totalQuantity{
     font-weight: bold;
     font-size: x-large;
 }
+.checkoutLayout .right .qr img{
+    width: 230px;
+    margin-top: 10px;
+    
+}
 .checkoutLayout .right .grouppay p{
     
     font-weight: bold;
-    background-color: #30da21;
+    
     font-size: 15px;
-    display:grid;
+    /*display:contents;*/
     padding-left: 10px;
     align-items: center;
   
 }
 .checkoutLayout .right .grouppay img{
-    display:block;
+    /*display:flex; */
     justify-content: space-between;
     align-items: center;
     margin-top: 3px;
     margin-right: 3px;
+    width: 20%;
     background-color: #eee;
     
-   
+}
+.checkoutLayout .right .grouppay {
+    display: grid;
 }
 .buttonCheckout{
     width: 100%;
