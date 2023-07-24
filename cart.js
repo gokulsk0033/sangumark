@@ -58,6 +58,8 @@ var url = "https://wa.me/919159220534?text="
                 + "Address: " + address + "%0a"
                 + "Pincode:" + pincode + "%0a"
                 + "Products:" + JSON.stringify(listCart)
+                + "Pincode:" +  + "%0a"
+                + "Pincode:" + pincode + "%0a"
                 ;
 
             window.open(url, '_blank').focus();
