@@ -51,7 +51,7 @@ var pincode=document.getElementById("pincode").value;
 var transactionid=document.getElementById("transid").value;
 
 
-var url = "https://wa.me/919159220534?text="
+var url = "mailto: gokulsk0033@gmail.com"
                 + "TransactionID:" + transactionid + "%0a"
                 + "Name: " + name + "%0a"
                 + "Phone: " + phone + "%0a"
