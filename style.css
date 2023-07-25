@@ -167,9 +167,9 @@ a{
     position: fixed;
     width: 400px;
     max-width: 80vw;
-    height: 100vh;
+    height: 85vh;
     background-color: #0E0F11;
-    top: 0px;
+    top: 14%;
     right: -100%;
     display: grid;
     grid-template-rows: 50px 1fr 50px;
@@ -232,6 +232,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    
     /*position: fixed;
     bottom: -1px;
     right: 5px;
@@ -249,6 +250,7 @@ a{
     font-weight: bold;
     cursor: pointer;
     position: relative;
+
 }
 .cart .buttons a{
     color: #ececec;
