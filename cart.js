@@ -1,4 +1,6 @@
 let listCart = [];
+let displayQuantity=0;
+let displayPrice=0;
 function checkCart(){
         var cookieValue = document.cookie
         .split('; ')
@@ -9,6 +11,7 @@ function checkCart(){
 }
 checkCart();
 addCartToHTML();
+
 function addCartToHTML(){
     // clear data default
     let listCartHTML = document.querySelector('.returnCart .list');
@@ -41,8 +44,19 @@ function addCartToHTML(){
     
     totalQuantityHTML.innerText = totalQuantity;
     totalPriceHTML.innerText = "RS." + totalPrice;
+    displayQuantity=totalQuantity;
+    displayPrice=totalPrice;
 }
+let productarray=[];
+listCart.forEach(item =>{
+    if(item){
+        productarray.push(`[${item.name} -> Quantity: '${item.quantity}'] `);
+    }
+})
+//productarray.push(`TotalQuantity = ${displayQuantity}"Items,TotalPrice = RS.${displayPrice} /-`);
+console.log(productarray);
 function check(){
+    alert("Click Ok to confirm order\nTracking Id will be shared through whatsapp by end ok the day");
     
 var name=document.getElementById("name").value;
 var phone=document.getElementById("phone").value;
@@ -51,15 +65,17 @@ var pincode=document.getElementById("pincode").value;
 var transactionid=document.getElementById("transid").value;
 
 
-var url = "mailto: gokulsk0033@gmail.com"
-                + "TransactionID:" + transactionid + "%0a"
+
+var url = "https://wa.me/919159220534?text="
+                + "TransactionID: " + transactionid + "%0a"
                 + "Name: " + name + "%0a"
                 + "Phone: " + phone + "%0a"
                 + "Address: " + address + "%0a"
                 + "Pincode:" + pincode + "%0a"
-                + "Products:" + JSON.stringify(listCart)
-                + "Pincode:" +  + "%0a"
-                + "Pincode:" + pincode + "%0a"
+                + "Products:"+"%0a" + productarray+ "%0a"
+                + "TotalQuantity = " + displayQuantity +"'Items"+ "%0a"
+                + "TotalPrice = RS." + displayPrice
+                
                 ;
 
             window.open(url, '_blank').focus();

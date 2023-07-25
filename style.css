@@ -12,6 +12,7 @@ a{
     max-width: 90%;
     transition: transform 1s;
     
+    
 }
 .btn img{
     position: fixed;
@@ -53,25 +54,39 @@ a{
     background-color: #1f7a12;
     
 }
-.iconCart img{
-    width: 55px;
-    
-}
-header{
+
+.hclass {
+    position:fixed;
+    z-index: 1;
     display:flex;
     align-items: center;
-    justify-content: space-between;
-   
-  
+    background-color: #e0ee5f;
+    width: 100%;
+    height: 13%;
+    
+    
+    
 
+}
+.hclass img{
+    height: 70px;
+    width: 60pxpx;
+    border-radius: 39%;
+    padding: 11px;
+}
+.hclass h1{
+    padding-left: -3%;
+}
+.iconCart img{
+    width:65px;
 }
 .iconCart{
     position: fixed;
-   
     right: 5%;
-    top:1;
+    top:1%;
     z-index: 1;
     cursor:pointer;
+    
     
     
 }
@@ -79,23 +94,25 @@ header{
 .iconCart .totalQuantity{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15%;
     font-size: x-large;
-    background-color: #b31010;
-    width: 40px;
-    height: 40px;
+    background-color: #62bccc;
+    width: 30px;
+    height: 30px;
     color: #fff;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 40%;
     transform: translateX(20px);
 }
 .listProduct{
     display: grid; 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding-top: 23%;
+    
     
 }
 .listProduct .item img{
