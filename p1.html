@@ -1,0 +1,20 @@
+<html>
+    <body>
+<label for="language">Select litre:</label>
+<select name="language" id="language" class="choose">
+  <option value="0.5">500ml</option>
+  <option value="1" selected>1L</option>
+  <option value="2" >2L</option>
+  <option value="5" >5L</option>
+</select>
+<button onclick="run()">ok</button>
+<p class="para">100rs</P>
+<script>
+    function run(){
+    let inp = document.querySelector('.choose').value;
+        console.log(inp*100);
+        document.querySelector('.para').innerHTML=`RS. ${inp*100}`;
+    }
+</script>
+</body>
+</html>

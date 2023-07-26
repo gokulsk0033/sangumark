@@ -31,7 +31,7 @@ function addCartToHTML(){
                     `<img src="${product.image}">
                     <div class="info">
                         <div class="name">${product.name}</div>
-                        <div class="price">RS.${product.price}/per litre</div>
+                        <div class="price">RS.${product.price}</div>
                     </div>
                     <div class="quantity">${product.quantity}</div>
                     <div class="returnPrice">${product.price * product.quantity}</div>`;
