@@ -1,6 +1,7 @@
 let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
+
 let close = document.querySelector('.close');
 
 iconCart.addEventListener('click', function(){
@@ -136,3 +137,24 @@ function changeQuantity($idProduct, $type){
     // reload html view cart
     addCartToHTML();
 }
+
+
+//nav bar
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+menuBtn.onclick = ()=>{
+  navbar.classList.add("show");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabled");
+}
+cancelBtn.onclick = ()=>{
+  body.classList.remove("disabled");
+  navbar.classList.remove("show");
+  menuBtn.classList.remove("hide");
+}
+navbar.classList.add("sticky")
+/*window.onscroll = ()=>{
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}*/

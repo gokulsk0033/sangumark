@@ -12,9 +12,9 @@ a{
     margin: auto;
     max-width: 90%;
     transition: transform 1s;
-    
-    
+  
 }
+
 .btn img{
     position: fixed;
     left: 5px;
@@ -40,19 +40,26 @@ a{
     width: 100%;
     height: 13%;
     
-    
-    
-
 }
+
 .hclass img{
     height: 70px;
     width: 60pxpx;
     border-radius: 39%;
     padding: 11px;
+    
 }
 .hclass h1{
     padding-left: -3%;
 }
+/*.hclass .headermenu{
+    font-weight: bold;
+    padding-right: 20px;
+    margin-top: 50px;
+    
+    font-size: large;
+
+}*/
 .iconCart img{
     width:65px;
 }
@@ -62,8 +69,6 @@ a{
     top:1%;
     z-index: 1;
     cursor:pointer;
-    
-    
     
 }
 
@@ -157,8 +162,9 @@ a{
 }
 
 .cart .buttons .checkout{
-    background-color: #E8BC0E;
+    background-color: #1d641d;
     color: #000;
+    font-size: 19px;
     
 }
 .cart h2{
@@ -181,10 +187,11 @@ a{
     
 }
 .cart .listCart img{
-    width: 100%;
+    width: 200%;
     height: 100%;
     object-fit:cover; 
-    border-radius: 7px;
+    border-radius: 1px;
+
 }
 .cart .listCart .item .name{
     font-weight: bold;
@@ -232,6 +239,7 @@ a{
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: 19px;
     cursor: pointer;
     position: relative;
 
@@ -388,3 +396,135 @@ a{
     
       
 }
+
+
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0px;
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky{
+    background: #a0ec6d;
+    padding: 10px 0px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .navbar .content{
+    display: flex;
+    align-items: center;
+    
+
+    
+  }
+  .navbar .logo a{
+    color: #fcf8f8;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none; 
+    padding-left: 10px;
+
+  }
+  .navbar img{
+    padding-left: 8%;
+  }
+  
+
+  .navbar .menu-list{
+    display:inline-flex;
+    margin-left: -100px;
+  }
+  .menu-list li{
+    list-style: none;
+  }
+  .menu-list li a{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 500;
+    margin-left: 25px;
+    
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .menu-list li a:hover{
+    color: #007bff;
+  }
+
+  .icon{
+    color: #fcfafa;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    
+  }
+  .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+  @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+    
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 868px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align:center;
+      background: #0e0d0d;
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar .logo a{
+      font-size: 25px;
+      
+
+    }
+  }
