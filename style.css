@@ -521,7 +521,7 @@ a{
       margin-left: 0px;
     }
   }
-  @media (max-width: 380px) {
+  @media (max-width: 500px) {
     .navbar .logo a{
       font-size: 25px;
       
