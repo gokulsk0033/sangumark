@@ -4,7 +4,7 @@
         "name": "Product 1",
         "price": 20,
         "image": "proimg.png",
-        "description":"Coconut oil is a yellowish white solid or semiliquid that melts at 23 °C (74 °F). Unlike most other oils obtained from plant or fish sources,"
+        "description":""
 
     },
     {
@@ -12,7 +12,7 @@
         "name": "Product 2",
         "price": 30,
         "image": "proimg.png",
-        "description":"Coconut oil is a yellowish white solid or semiliquid that melts at 23 °C (74 °F). Unlike most other oils obtained from plant or fish sources,"
+        "description":""
 
     },
     {
@@ -20,7 +20,7 @@
         "name": "Product 3",
         "price": 40,
         "image": "proimg.png",
-        "description":"Coconut oil is a yellowish white solid or semiliquid that melts at 23 °C (74 °F). Unlike most other oils obtained from plant or fish sources,"
+        "description":""
 
     }
     ,
@@ -29,43 +29,49 @@
         "name": "Product 4",
         "price": 46,
         "image": "proimg.png",
-        "description":"Coconut oil is a yellowish white solid or semiliquid that melts at 23 °C (74 °F). Unlike most other oils obtained from plant or fish sources,"
+        "description":""
 
     },
     {
         "id": 5,
         "name": "Product 5",
         "price": 35,
-        "image": "proimg.png"
+        "image": "proimg.png",
+        "description":""
     },
     {
         "id": 6,
         "name": "Product 6",
         "price": 70,
-        "image": "proimg.png"
+        "image": "proimg.png",
+        "description":""
     },
     {
         "id": 7,
         "name": "Product 7",
         "price": 70,
-        "image": "proimg.png"
+        "image": "proimg.png",
+        "description":""
     },
     {
         "id": 8,
         "name": "Product 8",
         "price": 70,
-        "image": "proimg.png"
+        "image": "proimg.png",
+        "description":""
     },
     {
         "id": 9,
         "name": "Product 9",
         "price": 70,
-        "image": "proimg.png"
+        "image": "proimg.png",
+        "description":""
     },
     {
         "id": 10,
         "name": "Product 10",
         "price": 70,
-        "image": "proimg.png"
+        "image": "proimg.png",
+        "description":""
     }
 ]
