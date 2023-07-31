@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    
+        <label for="feedback">Write your feedback</lable><br>
+        <input type="text" class="feedback">
+        <button onclick="read()">Submit Feedback</button>
+        <p class="custfeedback">customer feedback</p>
+    
+    <script>
+        let arr=[];
+        function read(){
+            const val=document.querySelector('.feedback').value;
+        arr.push(val);
+        document.querySelector('.custfeedback').innerHTML=val;
+        console.log(arr);
+        }
+        console.log(arr);
+    </script>
+</body>
