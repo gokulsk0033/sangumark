@@ -19,6 +19,7 @@ close.addEventListener('click', function (){
 })
 
 
+
 let products = null;
 // get data from file json
 fetch('product.json')
@@ -41,17 +42,19 @@ function addDataToHTML(){
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
             newProduct.innerHTML = 
-            `<img src="${product.image}" alt="">
+            `
+            <img src="${product.image}" alt="">
             <h2>${product.name}</h2>
             <div class="price">RS.${product.price}</div>
-            <h3>${product.description}</h3>
             <button onclick="addCart(${product.id})">Add To Cart</button>`;
-
+            
             listProductHTML.appendChild(newProduct);
 
         });
     }
 }
+
+
 //use cookie so the cart doesn't get lost on refresh page
 
 

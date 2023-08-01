@@ -1,77 +1,79 @@
 [
     {
         "id": 1,
-        "name": "Product 1",
-        "price": 20,
-        "image": "proimg.png",
-        "description":""
+        "name": "Groundnut oil (1 litre)",
+        "price": 280,
+        "image": "proimg.png"
 
     },
     {
         "id": 2,
-        "name": "Product 2",
-        "price": 30,
-        "image": "proimg.png",
-        "description":""
+        "name": "Groundnut oil (500ml)",
+        "price": 160,
+        "image": "proimg.png"
 
     },
     {
         "id": 3,
-        "name": "Product 3",
-        "price": 40,
-        "image": "proimg.png",
-        "description":""
+        "name": "Groundnut oil (5 litre)",
+        "price": 1325,
+        "image": "proimg.png"
 
     }
     ,
     {
         "id": 4,
-        "name": "Product 4",
-        "price": 46,
-        "image": "proimg.png",
-        "description":""
+        "name": "Sesame oil (1 litre)",
+        "price": 460,
+        "image": "proimg.png"
 
     },
     {
         "id": 5,
-        "name": "Product 5",
-        "price": 35,
-        "image": "proimg.png",
-        "description":""
+        "name": "Sesame oil (500 ml)",
+        "price": 260,
+        "image": "proimg.png"
     },
     {
         "id": 6,
-        "name": "Product 6",
-        "price": 70,
-        "image": "proimg.png",
-        "description":""
+        "name": "Sesame oil (5 litre)",
+        "price": 2250,
+        "image": "proimg.png"
     },
     {
         "id": 7,
-        "name": "Product 7",
-        "price": 70,
-        "image": "proimg.png",
-        "description":""
+        "name": "Coconut oil (1 litre)",
+        "price": 280,
+        "image": "proimg.png"
     },
     {
         "id": 8,
-        "name": "Product 8",
-        "price": 70,
-        "image": "proimg.png",
-        "description":""
+        "name": "Coconut oil (500 ml)",
+        "price": 145,
+        "image": "proimg.png"  
     },
     {
         "id": 9,
-        "name": "Product 9",
-        "price": 70,
-        "image": "proimg.png",
-        "description":""
+        "name": "Coconut oil (5 litre)",
+        "price": 1325,
+        "image": "proimg.png"  
     },
     {
         "id": 10,
-        "name": "Product 10",
-        "price": 70,
-        "image": "proimg.png",
-        "description":""
+        "name": "Castor oil (1 litre)",
+        "price": 230,
+        "image": "proimg.png"
+    },
+    {
+        "id": 11,
+        "name": "Castor oil (500ml)",
+        "price": 130,
+        "image": "proimg.png"
+    },
+    {
+        "id": 12,
+        "name": "Cocos soap",
+        "price": 80,
+        "image": "proimg.png"
     }
 ]
