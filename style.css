@@ -146,7 +146,7 @@ a{
 .cart{
     color: #fff;
     position: fixed;
-    width: 700px;
+    width: 600px;
     max-width: 80vw;
     max-height: 79vh;
     background-color: #0E0F11;
@@ -384,13 +384,14 @@ a{
     gap: 5px;
     text-align: center;
     
+    
 }
 .footerclass .footerhead{
     font-weight: bold;
 }
 
 .footerclass .social a img{
-    width: 113px;
+    width: 93px;
     gap:10%;
     padding-bottom: 2%;
     align-content: center;
@@ -762,14 +763,27 @@ a{
 
 /*HEALTH BENEFITS STYLES*/
 
-body {
-	background: beige;
+
+.hbheader{
+  text-align: center;
+  font-size:350%;
+  background-color: #3ae47b;
+  width: 100%;
+  position: fixed;
+  height: auto;
+  margin-top: -100px;
   
 }
+.hbheader a{
+  color: white;
+  font-size: 70px;
+  
+}
+
 .wrapper {
 	min-height: 100vh;
 	box-sizing: border-box;
-	padding-top: 5%;
+	padding-top: 1%;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5;
 	max-width: 1200px;
@@ -794,6 +808,7 @@ body {
 	cursor: pointer;
   font-size: x-large;
   border-radius: 5%;
+  
 }
 .box .content {
 	display: none;
@@ -804,6 +819,7 @@ body {
 	flex-grow: 1;
 	width: 100%;
   font-size: larger;
+  
 }
 .box input[type="radio"] {
 	display: none;
@@ -815,14 +831,100 @@ body {
 	display: block;
 }
 
+
+/*About us*/
+.bodyaboutus{
+  position: absolute;
+}
+.auheader{
+  text-align: center;
+  font-size:350%;
+  background-color: #3ae47b;
+  width: 100%;
+  position: fixed;
+  
+  
+
+}
+.auheader a{
+  color: white;
+}
+.aboutusgrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:10%;
+  margin-bottom: 13%;
+}
+.bgaboutus{
+  background-color: beige;
+  border-radius: 1%;
+
+  
+
+}
+.paraaboutus{
+  font-weight: bolder;
+  text-align: center;
+  font-size: large;
+  font-family:sans-serif;
+  
+}
+.paraaboutus1{
+  font-weight: bolder;
+  text-align: center;
+  font-size: large;
+  font-family:sans-serif;
+  
+}
+.auh1{
+  padding-top: 9%;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+}
 .bgaboutus h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  background-color:rgb(161, 216, 230);
+  margin: 0 25%;
+  font-family:serif;
+  
 }
 .bgaboutus p{
   text-align: center;
   font-weight: lighter;
   font-size: 110%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+
+}
+
+
+@media (max-width: 500px) {
+  .bgaboutus h2{
+    text-align: center;
+    font-size: 20px;
+    background-color:rgb(132, 192, 231);
+    margin: 0 25%;
+    font-family:serif;
+    
+  }
+  .aboutusgrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:5%;
+    margin-bottom: 13%;
+  }
+  
+  .paraaboutus1{
+    font-weight: bolder;
+    text-align: center;
+    font-size: large;
+    font-family:sans-serif;
+    padding-top: 60%;
+    
+    
+  }
+  
 
 }
 
