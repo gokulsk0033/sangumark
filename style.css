@@ -24,9 +24,10 @@ a{
     height: 10%;
     border-radius: 100px;
     border: 0;
-    z-index: 9999;
+    z-index: 1;
     background:local;
     transition: .2s;
+    cursor: pointer;
 }
 
 
@@ -339,6 +340,11 @@ a{
 
 
 }
+
+.returnCart{
+  margin-top: 10%;
+}
+
 .returnCart h1{
     border-top: 1px solid #eee;  
     padding: 20px 0;
@@ -365,9 +371,9 @@ a{
     display: grid;
     grid-template-columns: 80px 1fr  50px 80px;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 30px;
-    padding: 0 10px;
+    padding: 0 1px;
     box-shadow: 0 10px 20px #5555;
     border-radius: 20px;
 }
@@ -414,7 +420,7 @@ a{
     transition: all 0.3s ease;
   }
   .navbar.sticky{
-    background: #a0ec6d;
+    background: #00854A;
     padding: 2px 0px;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   }
@@ -452,7 +458,7 @@ a{
   }
   .menu-list li a{
     color: #ffffff;
-    font-size: 23px;
+    font-size: 15px;
     font-weight: 500;
    
     padding-right: 30px;
@@ -477,12 +483,15 @@ a{
     right: 30px;
     top: 20px;
   }
+  .navmargin{
+    margin-left: 25px;
+  }
   @media (max-width: 1230px) {
     
     .navbar .menu-list a{
       font-size: 15px;
-      margin-left: 40px;
-      padding-right: 1px;
+      
+      padding-right: 23px;
     }
   }
   @media (max-width: 1100px) {
@@ -547,6 +556,9 @@ a{
       margin-left: -100%;
       transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
+    .returnCart{
+      margin-top: 23%;
+    }
 
 
   }
@@ -557,7 +569,7 @@ a{
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 
-.container {
+.containerreview {
   height: 60vh;
   width: 60%;
   display: flex;
@@ -672,7 +684,7 @@ a{
 }
 
 @media (max-width: 500px){
-  .container{
+  .containerreview{
     position:absolute;
     height: auto;
   width: 90%;
@@ -767,7 +779,7 @@ a{
 .hbheader{
   text-align: center;
   font-size:350%;
-  background-color: #3ae47b;
+  background-color: #00854A;
   width: 100%;
   position: fixed;
   height: auto;
@@ -834,15 +846,16 @@ a{
 
 /*About us*/
 .bodyaboutus{
-  position: absolute;
+  position:absolute;
 }
 .auheader{
   text-align: center;
   font-size:350%;
-  background-color: #3ae47b;
+  background-color: #00854A;
   width: 100%;
   position: fixed;
-  
+  top: 1px;
+  z-index: 1;
   
 
 }
@@ -926,5 +939,106 @@ a{
   }
   
 
+}
+
+/*imageslider aboutus*/
+
+.container{
+  width: 80%;
+  height: 80vh;
+  
+  position: relative;
+  margin: 6% 9%;
+}
+
+.container .image{
+  display: none;
+}
+
+.container .image img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 1%;
+  
+}
+
+.container .button{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.container .button a{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(252, 252, 252);
+  background: #00854A;
+  font-size: 20px;
+  user-select: none;
+}
+
+.container .button .prev{
+  border-radius: 0 5px 5px 0;
+  margin-right: 97%;
+  padding-right: 10px;
+  
+}
+
+.container .button .next{
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  
+  
+}
+
+.dots{
+  text-align: center;
+  position:absolute;
+  bottom: 8px;
+  left: 45%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  height: 30px;
+  border-radius: 15px;
+
+}
+
+.dot{
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #bbb;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.active, .dot:hover{
+  background: #00854A;
+}
+
+@media (max-width: 500px) {
+
+  .dots{
+    left: 31%;
+  }
+  .container{
+    margin: 10% 7%;
+  }
+  .container .image img{
+    margin-left: 5%;
+  }
 }
 

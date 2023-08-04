@@ -3,7 +3,7 @@
     <head>
         <title>ABOUT US</title>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <div class="bodyaboutus">
@@ -15,6 +15,37 @@
         
         <div class="paraaboutus">
             <p>At Sri Ram Oil Mill, we take immense pride in providing you with the finest selection of edible oils that not only enhance the flavors of your culinary creations but also promote a healthier lifestyle. Since our establishment in 2000, we have garnered years of expertise and a commitment to excellence, making us a leading name in the industry, trusted by countless customers.</p>
+        </div>
+        <!--image slider-->
+        <div class="container">
+            <div class="image">
+                <img src="factory1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="factory.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="factory1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="factory.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="factory3.jpg" alt="">
+            </div>
+    
+            <div class="button">
+                <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+                <a onclick="nextimg(1)" class="next">&#10095;</a>
+            </div>
+    
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
         </div>
 
         <div class="aboutusgrid">   
@@ -105,5 +136,11 @@
     
         </div>
     </div>
+    <a href="https://wa.me/919159220534?text=">
+        <button class="btn whatsapp">
+            <img src ="wp.gif" alt="whatsapp">
+        </button>
+    </a>
+    <script src="about_us.js">
     </body>
 </html>
