@@ -3,11 +3,11 @@ var imageno =1;
         displayimg(imageno);
 
         function nextimg(n){
-            displayimg(imageno += n)
+            displayimg(imageno += n);
         }
 
         function currentSlide(n){
-            displayimg(imageno = n)
+            displayimg(imageno = n);
         }
 
         function displayimg(n){
