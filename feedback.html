@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+    <title>FEEDBACK</title>
 </head>
 <body>
-    
-        <label for="feedback">Write your feedback</lable><br>
-        <input type="text" class="feedback">
-        <button onclick="read()">Submit Feedback</button>
-        <p class="custfeedback">customer feedback</p>
-    
+    <div class="feedbackbody">
+        <div class="auheader">
+            <a href="index.html" >SANGUMARK<a>
+            </div>
+    <form>
+    <div class="feedbackcont">
+        <label for="name" class="feedhead">Name:</lable><br>
+        <input type="text" class="feedback feedbackn" placeholder="Enter your Name" required required><br>
+        <label for="place" class="feedhead">Place:</lable><br>
+        <input type="text" class="feedback feedbackp" placeholder="Enter your District,State" required><br>
+        <label for="feedback" >Write your feedback:</lable><br>
+        <input type="text" class="feedbacktext" placeholder="Enter your feedback here" required>
+        <br>
+        <button class="feedbackbtn" onclick="getdata()">Submit Feedback</button>
+    </div>
+
+    <div class="footerclass">
+        <div class="footeraddress">
+        <p class="footerhead">Address</p>
+        <p>108/5</p>
+        <p>Bharathiyar 8th Street</p>
+        <p>Sankarankoil</p>
+        <p>Tenkasi-627756</p>
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3938.672335911837!2d77.5418!3d9.184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0697c86ca7e11b%3A0xa0b9384f74d8fcdf!2sBharathiyar%208th%20St%2C%20Tamil%20Nadu%20627756!5e0!3m2!1sen!2sin!4v1690300606600!5m2!1sen!2sin" width="185px" height="170px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+        </div>
+        <div class="footeraboutus">
+            <p class="footerhead">About us</p>
+            <p class="footerhead">Manufacturers of high quality</p>
+            <p class="oillist">Sesame oil</p>
+            <p class="oillist">Groundnut oil</p>
+            <p class="oillist">Coconut oil</p>
+            <p class="oillist">Castor oil</p>
+            <h4>Contact us:</h4>
+            <b><p>Landline: 04636222722</p></b>
+            <b><p>Phone: 9442622314, 9442775616 </p></b>
+            
+            <b><p>Email:</p></b>
+            <p><a href="mailto:123@gmail.com">123@gmail.com</a></p>
+        </div>
+        <div class="social">
+            <p class="footerhead">Follow us on!</p>
+        <a href="/"><img src="fb.png"></a><br>
+        <a href="/"><img src="ig.jpg"></a><br>
+        <a href="/"><img src="twitter.png"></a><br>
+        <a href="/"><img src="yt.png"></a>
+        </div>
+
+    </div>
+</form>
+</div>
     <script>
-        let arr=[];
-        function read(){
-            const val=document.querySelector('.feedback').value;
-        arr.push(val);
-        document.querySelector('.custfeedback').innerHTML=val;
-        console.log(arr);
+        function getdata(){
+            let name=document.querySelector('.feedbackn').value;
+            let place=document.querySelector('.feedbackp').value;
+            let feedback=document.querySelector('.feedbacktext').value;
+            
+            var url = "https://wa.me/919159220534?text="
+                + "Name: " + name + "%0a"
+                + "Place: " + place + "%0a"
+                + "Feedback: " + feedback + "%0a"
+                ;
+
+                window.open(url, '_blank').focus();
         }
-        console.log(arr);
     </script>
 </body>
