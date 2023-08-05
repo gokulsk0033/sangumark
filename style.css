@@ -17,10 +17,10 @@ a{
 
 .btn img{
     position: fixed;
-    left: 5px;
+    left: 7px;
     bottom: 13px;
     overflow: hidden;
-    width: 13%;
+    width: 5%;
     height: 10%;
     border-radius: 100px;
     border: 0;
@@ -97,6 +97,7 @@ a{
     
     
     
+    
 }
 .listProduct .item img{
     width: 100%;
@@ -110,6 +111,11 @@ a{
     position:relative;
     gap:3px;
     margin-bottom: 9%;
+    border-radius: 10%;
+    border-color: goldenrod;
+    border-style:solid;
+    
+    
 
     
 }
@@ -123,6 +129,7 @@ a{
 .listProduct .item .price{
     font-size:xx-large;
     text-align: center;
+    font-family:serif;
 }
 
 .listProduct .item button{
@@ -256,6 +263,7 @@ a{
     gap: 30px;
     padding: 0%;
     font-size: 17px;
+    margin-bottom: 5%;
     
 }
 .checkoutLayout .right{
@@ -415,7 +423,7 @@ a{
   .navbar{
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     padding: 2px 0px;
     transition: all 0.3s ease;
   }
@@ -467,7 +475,7 @@ a{
     transition: all 0.3s ease;
   }
   .menu-list li a:hover{
-    color: #007bff;
+    color: goldenrod;
   }
 
   .icon{
@@ -560,6 +568,21 @@ a{
       margin-top: 23%;
     }
 
+    .btn img{
+      position: fixed;
+      left: 5px;
+      bottom: 13px;
+      overflow: hidden;
+      width: 13%;
+      height: 10%;
+      border-radius: 100px;
+      border: 0;
+      z-index: 1;
+      background:local;
+      transition: .2s;
+      cursor: pointer;
+  }
+
 
   }
 
@@ -578,6 +601,7 @@ a{
   background-color: #eff3f7;
   margin: 10% 20%;
   border-radius: 200px;
+  z-index: 0;
 }
 .testimonial {
   position:relative;
@@ -649,9 +673,11 @@ a{
 }
 .swiper-pagination-bullet {
   background-color: rgba(0, 0, 0, 0.8);
+  
 }
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
+  
 }
 .reviewbg{
   background-image: url("reviewbg.jpg");
@@ -774,7 +800,7 @@ a{
 }
 
 /*HEALTH BENEFITS STYLES*/
-
+  
 
 .hbheader{
   text-align: center;
@@ -785,10 +811,11 @@ a{
   height: auto;
   margin-top: -100px;
   
+  
 }
 .hbheader a{
   color: white;
-  font-size: 70px;
+  font-size: 90%;
   
 }
 
@@ -897,7 +924,7 @@ a{
 .bgaboutus h2{
   text-align: center;
   font-size: 20px;
-  background-color:rgb(161, 216, 230);
+  background-color:goldenrod;
   margin: 0 25%;
   font-family:serif;
   
@@ -937,6 +964,9 @@ a{
     
     
   }
+
+  /*healthbenefits*/
+  
   
 
 }
@@ -972,7 +1002,7 @@ a{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 5;
+  z-index: 0;
 }
 
 .container .button a{
@@ -987,6 +1017,7 @@ a{
   background: #00854A;
   font-size: 20px;
   user-select: none;
+  
 }
 
 .container .button .prev{
@@ -1026,7 +1057,7 @@ a{
 }
 
 .active, .dot:hover{
-  background: #00854A;
+  background: goldenrod;
 }
 
 @media (max-width: 500px) {
