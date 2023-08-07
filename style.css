@@ -829,7 +829,7 @@ a{
 	padding-top: 1%;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5;
-	max-width: 1200px;
+	
 	margin: 9% 1%;
   
 }
@@ -980,7 +980,7 @@ a{
 
   /*healthbenefits*/
   .wrapper {
-    margin: 40% 1%;
+    margin: 33% 1%;
   }
   .box label {
     font-size: 65%;
