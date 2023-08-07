@@ -801,12 +801,13 @@ a{
 /*HEALTHBENEFITS STYLES*/
 .hbbody{
   position:absolute;
+  
  
 }  
 
 .hbheader{
   text-align: center;
-  font-size:350%;
+  font-size:300%;
   background-color: #00854A;
   width: 100%;
   position: fixed;
@@ -849,6 +850,7 @@ a{
 	padding: 16px 10px;
 	margin-right: 10px;
   margin-bottom: -9%;
+  margin-top: 5%;
 	cursor: pointer;
   font-size:105%;
   border-radius: 5%;
@@ -978,7 +980,7 @@ a{
 
   /*healthbenefits*/
   .wrapper {
-    margin: 30% 1%;
+    margin: 40% 1%;
   }
   .box label {
     font-size: 65%;
