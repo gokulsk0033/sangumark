@@ -8,7 +8,7 @@ a{
     text-decoration: none;
 }
 .products{
-    width: 1200px;
+    width:100%;
     margin: auto;
     max-width: 90%;
     transition: transform 1s;
@@ -400,6 +400,7 @@ a{
     
     
     
+    
 }
 .footerclass .footerhead{
     font-weight: bold;
@@ -423,7 +424,7 @@ a{
   }
   .navbar{
     position: fixed;
-    width: 100%;
+    width:100%;
     z-index: 3;
     padding: 2px 0px;
     transition: all 0.3s ease;
@@ -633,11 +634,7 @@ a{
   font-weight: 400;
   color: #333;
 }
-.slide .quote-icon {
-  font-size: 30px;
-  color: #4070f4;
-  
-}
+
 .slide .details {
   display: flex;
   flex-direction: column;
@@ -657,13 +654,14 @@ a{
 .nav-btn {
   height: 40px;
   width: 40px;
-  
+
   transform: translateY(30px);
-  background-color: rgb(233, 247, 110);
+  background-color: rgb(7, 7, 6);
   transition: 0.2s;
 }
 .nav-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  
 }
 .nav-btn::after,
 .nav-btn::before {
@@ -671,11 +669,12 @@ a{
   color: #fff;
 }
 .swiper-pagination-bullet {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(10, 9, 9, 0.8);
   
 }
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
+ 
   
 }
 .reviewbg{
@@ -718,12 +717,7 @@ a{
   justify-content: center;
   background-color: #c6cacc;
   margin: 4% 4%;
-  
-  
   border-radius: 5px;
-  
-  
-  
   }
   .swiper-slide{
     padding: 9% 0%;
@@ -757,7 +751,6 @@ a{
     transform: translateY(30px);
     background-color: #c2ece3;
     transition: 0.2s;
-
   }
   .reviewbg{
     background-image: url("reviewbg.jpg");
@@ -765,10 +758,7 @@ a{
     background-size:cover;
     width: 100%;
     height: 100vh;
-    padding-top: 20%;
-    
-  
-    
+    padding-top: 20%; 
   }
   .reviewbg h1{
     align-items: center;
@@ -783,7 +773,6 @@ a{
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding-top: 23%;   
-  
 }
 .cart .listCart .item{
   display: grid;
@@ -1118,9 +1107,11 @@ a{
   
 }
 .feedbacktext{
+  width: 560px;
   margin: 2% 0;
-  padding:13% 25%;
+  padding:6% 2%;
   border-radius: 10px;
+  
   
 }
 .feedbackbtn{
@@ -1149,9 +1140,11 @@ a{
     
   }
   .feedbacktext{
-    margin: 5% 0;
-    padding:20% 13%;
-    border-radius: 10px;
+  width: 260px;
+  margin: 2% 0;
+  padding:6% 2%;
+  border-radius: 10px;
+  
     
   }
   .feedbackbtn{
@@ -1160,3 +1153,12 @@ a{
 
 }
 
+/*Copyright*/
+.cr{
+  border-radius: 40px;
+  background-color:yellowgreen;
+  text-align: center;
+  font-size: large;
+  color: rgb(252, 252, 252);
+  margin: 0 90px;
+}
