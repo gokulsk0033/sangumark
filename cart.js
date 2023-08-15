@@ -56,7 +56,7 @@ listCart.forEach(item =>{
 //productarray.push(`TotalQuantity = ${displayQuantity}"Items,TotalPrice = RS.${displayPrice} /-`);
 console.log(productarray);
 function check(){
-    alert("Click Ok to confirm order\nTracking Id will be shared through whatsapp by end ok the day");
+    alert("Click Ok to confirm order\nTracking Id will be shared through whatsapp by end of the day");
     
 var name=document.getElementById("name").value;
 var phone=document.getElementById("phone").value;
